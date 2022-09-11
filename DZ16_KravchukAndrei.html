@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ16_KravchukAndrei</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="DZ16_KravchukAndrei.css">
+</head>
+<body>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Конвертер валют</h5>
+        <div class="form-group">
+            <label for="date">Начальная дата диапазона</label>
+            <input type="date" class="form-control" id="firstDate">
+            <small id="dateHelp" class="form-text text-muted">*Начальная дата должна быть меньше конечной*</small>
+        </div>
+        <div class="form-group">
+            <label for="date">Конечная дата диапазона</label>
+            <input type="date" class="form-control" id="secondDate">
+        </div>
+        <div class="curr-wrapper">
+            <div class="form-group">
+                <label>Min курс $ из диапазона</label>
+                <div class="form-group"><input type="date" id="minCurrDate" class="form-control" readonly></div>
+                <div class="form-group"><input id="minCurrValue" class="form-control" readonly></div>
+            </div>
+            <div class="form-group">
+                <label>Max курс $ из диапазона</label>
+                <div class="form-group"><input type="date" id="maxCurrDate" class="form-control" readonly></div>
+                <div class="form-group"><input id="maxCurrValue" class="form-control" readonly></div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary">Рассчитать</button>
+    </div>
+</div>
+<script src="DZ16_KravchukAndrei.js"></script>
+</body>
+</html>
